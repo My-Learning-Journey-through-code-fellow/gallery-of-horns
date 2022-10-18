@@ -7,16 +7,16 @@ class Main extends React.Component {
     let beasts = [];
 
     data.forEach((HornedAnimal, index) => {
-      beasts.push (
+      beasts.push(
 
         <HornedBeast
-        _id = {HornedAnimal._id}
-        image_url = {HornedAnimal.image_url}
-        title = {HornedAnimal.title}
-        description = {HornedAnimal.description}
-        keyword = {HornedAnimal.keyword}
-        horns = {HornedAnimal.horns}
-        key = {index}
+          _id={HornedAnimal._id}
+          image_url={HornedAnimal.image_url}
+          title={HornedAnimal.title}
+          description={HornedAnimal.description}
+          keyword={HornedAnimal.keyword}
+          horns={HornedAnimal.horns}
+          key={index}
         />
 
       )
