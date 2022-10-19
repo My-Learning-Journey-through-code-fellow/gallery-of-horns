@@ -1,6 +1,10 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 
 class HornedBeast extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -8,7 +12,7 @@ class HornedBeast extends React.Component {
     }
   }
 
-  handlefaves = () => {
+  handleFaves = () => {
     this.setState({
       faves: this.state.faves + 1
     })
@@ -16,16 +20,20 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
-      <article>
-        <img src={this.props.image_url} alt={this.props.keyword} />
-        <h2>{this.props.title}</h2>
-        <p>{this.state.faves} Favorites</p>
-        <p onClick={this.handlefaves}>Favorite Me 💖</p>
-        <p>{this.props.description}</p>
-        <p>{this.props.horns} Horn(s)</p>
-      </article>
-    )
-  }
-}
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={this.props.image_url} />
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>
+            <p>{this.state.faves} Favorites</p>
+            <p>{this.props.description}</p>
+            <p>{this.props.horns} Horn(s)</p>
+          </Card.Text>
+          <Button onClick={this.handleFaves} variant="outline-danger">Favorite Me 💖</Button>
+        </Card.Body>
+      </Card>
+    );
 
+  };
+}
 export default HornedBeast;
