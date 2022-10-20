@@ -9,6 +9,16 @@ Finish time: ___6:55pm__
 
 Actual time needed to complete: __3 hours, 50 minutes were a break___
 
+Number and name of feature: ________Modal___________________
+
+Estimate of time needed to complete: ___2.5 hours__
+
+Start time: ___3:30pm__
+
+Finish time: ___5:37pm__
+
+Actual time needed to complete: ___2 Hours 7 min__
+
 Number and name of feature: ________________________________
 
 Estimate of time needed to complete: _____
