@@ -23,8 +23,8 @@ class HornedBeast extends React.Component {
     return (
       <Card style={{ width: '18rem' }}>
         <Card.Img onClick={this.props.handleOpenModal}
-        variant="top"
-        src={this.props.image_url} />
+          variant="top"
+          src={this.props.image_url} />
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>
